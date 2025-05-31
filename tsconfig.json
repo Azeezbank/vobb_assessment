@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                         // Use modern JS features
+    "module": "ESNext",                        // Required for ES modules
+    "moduleResolution": "node",                 // Node module resolution
+    "outDir": "./dist",                         // Output directory
+    "rootDir": "./src",                         // Source directory
+    "strict": true,                             // Enable strict typing
+    "esModuleInterop": true,                    // Allow default imports
+    "forceConsistentCasingInFileNames": true,   // Prevent casing issues
+    "skipLibCheck": true,                       // Skip type-checking node_modules
+    "allowSyntheticDefaultImports": true,       // Support `import x from "y"`
+    "resolveJsonModule": true                   // Allow importing .json files
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
