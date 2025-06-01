@@ -1,6 +1,10 @@
 # 🚗 Car Dealership API
 A RESTful API for managing cars, categories, and users for a car dealership. Built with Node.js, Express, TypeScript, and MongoDB, it supports authentication, pagination, filtering, and more.
 
+# Postmaon documentation link
+`https://documenter.getpostman.com/view/45496448/2sB2qgedpB`
+
+
 ## 🔧 Tech Stack
 - Backend: Node.js, Express.js
 
