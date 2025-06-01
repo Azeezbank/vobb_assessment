@@ -1,4 +1,5 @@
-import { Schema, model, Document, Types } from 'mongoose';
+// Car Schema page with car model
+import { Schema, model, Document, Types } from "mongoose";
 
 export interface ICar {
   brand: string;
@@ -20,11 +21,11 @@ const carSchema = new Schema<ICar>(
     availability: { type: Boolean, default: true },
     condition: { type: String },
     color: { type: String },
-    year: { type: Number, require: true},
-    image: { type: String, required: true},
-    category: { type: Schema.Types.ObjectId, ref: 'Category', required: true },
+    year: { type: Number, require: true },
+    image: { type: String, required: true },
+    category: { type: Schema.Types.ObjectId, ref: "Category", required: true },
   },
   { timestamps: true }
 );
 
-export default model<ICar>('Car', carSchema);
+export default model<ICar>("Car", carSchema);

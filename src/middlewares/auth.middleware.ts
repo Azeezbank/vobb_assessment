@@ -1,17 +1,19 @@
-import jwt from 'jsonwebtoken';
-
+// middleware to protect routes
+import jwt from "jsonwebtoken";
 
 const authenticate = (req: any, res: any, next: any) => {
+
+  // get token from cookie
   const token = req.cookies?.token;
-  if (!token) return res.status(401).json({ message: 'Unauthorized' });
+  if (!token) return res.status(401).json({ message: "Unauthorized" });
 
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET!);
     (req as any).user = decoded;
     next();
   } catch (err: any) {
-    console.error('Inavlid Token', err.message)
-    return res.status(401).json({ message: 'Invalid token' });
+    console.error("Inavlid Token", err.message);
+    return res.status(401).json({ message: "Invalid token" });
   }
 };
 

@@ -1,3 +1,4 @@
+// Car category route for create, fetch, update and delete car
 import { Router } from 'express';
 import * as CarController from '../controllers/car.controller';
 const router = Router();
