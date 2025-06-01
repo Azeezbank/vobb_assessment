@@ -80,7 +80,7 @@ POST `https://vobb-assessment-r9vt.onrender.com/api/auth/login`
 POST `https://vobb-assessment-r9vt.onrender.com/api/cars` - Create a car
 
 **Note**
-`To create a car, for the category field, ensure its selection options and use the desire category as the option, so as to get the category when fetching. e.g` <select><option value={category.id}>Sedan</option></select>
+`To create a car, for the category field, ensure its selection options and use the desire category as the option, so as to get the category when fetching. e.g <select><option value={category.id}>Sedan</option></select>`
 
 GET `https://vobb-assessment-r9vt.onrender.com/api/cars?brand=Toyota&model=Camry&availabilit=true&condition=Used&color=Silver&year=2022&category=68385acce15d429e41201803` - List cars with (supports filters & pagination) . the filtering options are shpwn in the parameters, if you didn't need to filter with any of the option just remove it from the link.
 
